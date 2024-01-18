@@ -1,0 +1,157 @@
+{
+  "mod_elements": [
+    {
+      "name": "Withering",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "withering",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/healthchaos/potion/WitheringMobEffect.java"
+        ]
+      }
+    },
+    {
+      "name": "WitheringOnEffectActiveTick",
+      "type": "procedure",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "withering_on_effect_active_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/healthchaos/procedures/WitheringOnEffectActiveTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Time",
+      "type": "config",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "time",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/healthchaos/configuration/TimeConfiguration.java"
+        ]
+      }
+    },
+    {
+      "name": "Launch",
+      "type": "procedure",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "launch",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/healthchaos/procedures/LaunchProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "WitheringEffectExpires",
+      "type": "procedure",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "withering_effect_expires",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/healthchaos/procedures/WitheringEffectExpiresProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Respawn",
+      "type": "procedure",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "respawn",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/healthchaos/procedures/RespawnProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    }
+  ],
+  "variable_elements": [
+    {
+      "name": "remaining_ticks",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    }
+  ],
+  "sound_elements": [],
+  "language_map": {
+    "en_us": {
+      "effect.health_chaos.withering": "Withering",
+      "config.health_chaos.time": "withering"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "health_chaos",
+    "modName": "Health Chaos",
+    "version": "1.0.0",
+    "author": "davis, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Academic Free License v3.0",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.20.1",
+    "modElementsPackage": "net.mcreator.healthchaos",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202300452316
+}

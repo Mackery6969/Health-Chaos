@@ -1,0 +1,51 @@
+{
+  "_fv": 57,
+  "_type": "config",
+  "definition": {
+    "pools": [
+      {
+        "category": "Gameplay",
+        "entries": [
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 12000.0,
+            "textDefault": "",
+            "comment": "The amount of ticks the base event will take",
+            "vardisplay": "Effect Ticks",
+            "varname": "effect_ticks",
+            "enablecomment": true,
+            "onlyComment": false,
+            "entityType": "EntityAgeable"
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 0,
+            "block": {
+              "value": ""
+            },
+            "logicField": 1,
+            "numberField": 0.0,
+            "textDefault": "",
+            "comment": "Prevents the health from hitting 0 and breaking the world",
+            "vardisplay": "Safety Net",
+            "varname": "safety_net",
+            "enablecomment": true,
+            "onlyComment": false,
+            "entityType": "EntityAgeable"
+          }
+        ]
+      }
+    ],
+    "file": "withering",
+    "configType": 0
+  }
+}
