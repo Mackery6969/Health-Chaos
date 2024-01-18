@@ -115,6 +115,110 @@
           }
         ]
       }
+    },
+    {
+      "name": "Reset",
+      "type": "procedure",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "reset",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/healthchaos/procedures/ResetProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SetTicks",
+      "type": "procedure",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_ticks",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/healthchaos/procedures/SetTicksProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "StopEffect",
+      "type": "procedure",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stop_effect",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/healthchaos/procedures/StopEffectProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "HC",
+      "type": "command",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hc",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/healthchaos/command/HCCommand.java"
+        ]
+      }
+    },
+    {
+      "name": "Milk",
+      "type": "procedure",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "milk",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/healthchaos/procedures/MilkProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -139,7 +243,7 @@
   "workspaceSettings": {
     "modid": "health_chaos",
     "modName": "Health Chaos",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "author": "davis, MCreator",
     "websiteURL": "https://mcreator.net",
     "license": "Academic Free License v3.0",
@@ -150,6 +254,7 @@
     "dependants": [],
     "mcreatorDependencies": [],
     "currentGenerator": "forge-1.20.1",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
     "modElementsPackage": "net.mcreator.healthchaos",
     "lockBaseModFiles": false
   },
